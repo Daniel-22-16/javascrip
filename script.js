@@ -1,2 +1,2 @@
-//Obtener la fecha actual
-var hoy =new Date(21/04/2023);
+alert("faltan 23 dias para el dia de la madre")
+ 

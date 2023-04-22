@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Obtener fecha y hora actual en JavaScript</title>
+  </head>
+  <body>
+    <h1>Fecha y hora actual:</h1>
+    <p id="fecha"></p>
+    <script>
+      // Obtener la fecha y hora actual
+      var fechaActual = new Date();
+      var diaSemana = fechaActual.toLocaleString("es-PE", { weekday: "long" });
+      var mes = fechaActual.toLocaleString("es-PE", { month: "long" });
+      var dia = fechaActual.getDate();
+      var anio = fechaActual.getFullYear();
+      var horas = fechaActual.getHours();
+      var minutos = fechaActual.getMinutes();
+      var segundos = fechaActual.getSeconds();
+
+      // Mostrar la fecha y hora actual en el HTML
+      document.getElementById("fecha").innerHTML =
+        diaSemana +
+        ", " +
+        mes +
+        " " +
+        dia +
+        " " +
+        anio +
+        " " +
+        horas +
+        ":" +
+        minutos +
+        ":" +
+        segundos;
+    </script>
+  </body>
+</html>
